@@ -8,6 +8,11 @@ module.exports = {
     // https://eslint.org/docs/rules/class-methods-use-this
     'class-methods-use-this': 'off',
 
+    // https://eslint.org/docs/rules/lines-between-class-members
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+
+    'no-plusplus': 'off',
+
     // https://eslint.org/docs/rules/semi
     'semi': ['error', 'always'],
 
@@ -25,9 +30,9 @@ module.exports = {
 
     // https://eslint.org/docs/rules/keyword-spacing
     'keyword-spacing': [
-        "error",
+        'error',
         {
-            "overrides": {
+            'overrides': {
                 'this': { 'before': false }, // For prevent errors in strings like '<any>this'
             },
         },
@@ -48,27 +53,30 @@ module.exports = {
     // https://eslint.org/docs/rules/no-param-reassign
     'no-param-reassign': 'off',
 
-    // https://eslint.org/docs/rules/implicit-arrow-linebreak
-    'implicit-arrow-linebreak': 'off',
-
     // https://eslint.org/docs/rules/max-len
-    'max-len': 'off', // Disabled for avoid duplicate errors with prettier printWidth
-
-    // https://prettier.io/docs/en/options.html
-    'prettier/prettier': [
+    'max-len': [
         'error',
         {
-            singleQuote: true,
-            printWidth: 120,
-            trailingComma: 'all',
-            tabWidth: 4,
-            arrowParens: 'always',
-            parser: 'typescript',
-        },
+            'code': 120,
+            'ignoreStrings': true,
+            'ignoreComments': true
+        }
     ],
 
-    // https://eslint.org/docs/rules/object-curly-newline
-    'object-curly-newline': 'off',
+    // https://eslint.org/docs/rules/no-await-in-loop
+    'no-await-in-loop': ['warn'],
+
+    // https://eslint.org/docs/rules/no-continue
+    'no-continue': ['warn'],
+
+    // https://eslint.org/docs/rules/no-mixed-operators
+    'no-mixed-operators': ['warn'],
+
+    // https://eslint.org/docs/rules/no-useless-escape
+    'no-useless-escape': ['warn'],
+
+    // https://eslint.org/docs/rules/camelcase
+    'camelcase': 'off',
 
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
     'import/extensions': [
