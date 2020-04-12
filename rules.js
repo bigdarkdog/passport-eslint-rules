@@ -11,6 +11,7 @@ module.exports = {
     // https://eslint.org/docs/rules/lines-between-class-members
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 
+    // https://eslint.org/docs/rules/no-plusplus
     'no-plusplus': 'off',
 
     // https://eslint.org/docs/rules/semi
@@ -54,14 +55,16 @@ module.exports = {
     'no-param-reassign': 'off',
 
     // https://eslint.org/docs/rules/max-len
-    'max-len': [
-        'error',
-        {
-            'code': 120,
-            'ignoreStrings': true,
-            'ignoreComments': true
-        }
-    ],
+    'max-len': 'off',
+
+    // [
+    //     'error',
+    //     {
+    //         'code': 120,
+    //         'ignoreStrings': true,
+    //         'ignoreComments': true
+    //     }
+    // ],
 
     // https://eslint.org/docs/rules/no-await-in-loop
     'no-await-in-loop': ['warn'],
@@ -86,4 +89,7 @@ module.exports = {
             'ts': 'never',
         },
     ],
+
+    'prettier/prettier': ['error'],
+
 };

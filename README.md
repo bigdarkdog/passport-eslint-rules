@@ -12,6 +12,17 @@ module.exports = {
 };
 ```
 
+and `.prettierrc` in root
+```json
+{
+    "singleQuote": true,
+    "printWidth": 120,
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "parser": "typescript",
+}
+```
+
 ## Usage
 ```sh
 $ eslint ./src/** --ext ts
