@@ -17,9 +17,9 @@ and `.prettierrc` in root
 {
     "singleQuote": true,
     "printWidth": 120,
-    "trailingComma": "es5",
+    "trailingComma": "none",
     "tabWidth": 4,
-    "parser": "typescript",
+    "parser": "typescript"
 }
 ```
 

@@ -57,20 +57,11 @@ module.exports = {
     // https://eslint.org/docs/rules/max-len
     'max-len': 'off',
 
-    // [
-    //     'error',
-    //     {
-    //         'code': 120,
-    //         'ignoreStrings': true,
-    //         'ignoreComments': true
-    //     }
-    // ],
-
     // https://eslint.org/docs/rules/no-await-in-loop
     'no-await-in-loop': ['warn'],
 
     // https://eslint.org/docs/rules/no-continue
-    'no-continue': ['warn'],
+    'no-continue': 'off',
 
     // https://eslint.org/docs/rules/no-mixed-operators
     'no-mixed-operators': ['warn'],
